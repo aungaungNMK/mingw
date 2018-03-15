@@ -1,0 +1,4 @@
+derine:
+  name: Derine Brian
+  email: arkarbrian@gmail.com
+  password_digest: <%= User.digest('password') %>
