@@ -178,6 +178,12 @@ footer {
   .navbar-inverse{
     background: #430d54d1;
   }
-  img{
-    display: none;
+  .users{
+    list-style: none;
+    margin: 0;
+    li {
+      overflow: auto;
+      padding: 10px 0;
+      border-bottom: 1px solid $gray-lighter;
+    }
   }
