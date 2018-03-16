@@ -2,3 +2,23 @@ derine:
   name: Derine Brian
   email: arkarbrian@gmail.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+arkar:
+  name: arkar Brian
+  email: derinebrian@gmail.com
+  password_digest: <%= User.digest('password') %>
+mira:
+  name: mira mira
+  email: mira@gmail.com
+  password_digest: <%= User.digest('password') %>
+irritel:
+  name: irritel irritel
+  email: irritel@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@aung.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
